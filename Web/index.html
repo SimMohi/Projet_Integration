@@ -73,12 +73,12 @@
             }
 
             section:first-child {
-                display: inline;
+                display: inline-block;
             }
 
             #ligne {
                 height: 50px;
-                background-image: url('capture.png');
+                background-image: url('IMG/capture.png');
                 opacity: 0.75;
             }
 
@@ -117,7 +117,7 @@
 
         <header>
             <div id="headDiv">
-                <img src="logo.png" alt="logo">
+                <img src="IMG/logo.png" alt="logo">
                 <h1>Projet d'intégration</h1>
             </div>
             <nav>
@@ -199,16 +199,19 @@
         <script>
             $(function() {
                 
-
+            	var selectedSct;
                 $('nav span').click(function() {
                     $('nav span').css('border-radius', '0px').css('background-color', '#f4f4f4');
                     $(this).css('border-radius', '10px 1px').css('background-color', '#9ec1a6');
 
                     var up = capitalize($(this).attr('id'));
-                    var id = '#sct' + String(up);
-                    $('section').stop(false, true).slideUp('fast').delay(500);
-
-                    $(id).slideDown('fast');
+                    var id = 'sct' + String(up);
+                    if(id != selectedSct) {
+                    	selectedSct = id;
+                    	$('section').slideUp('fast').delay(500);
+						$('#' + id).slideDown('fast');
+                    }
+                    
                     
                 });
 
