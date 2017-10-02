@@ -2,117 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Le titre du document</title>
+        <title>Projet d'intrégration</title>
         <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
-        <style type="text/css">
-            * {
-                margin: 1%;
-                padding: 1%;
-                box-sizing: border-box;
-            }
-
-            html {
-                background-color: #f4f4f4;
-            }
-
-            body {
-                margin: auto;
-                width: 70%;
-                min-width: 310px;
-                font-family: 'Questrial';
-                font-size: 15px;
-                height: 800px;
-            }
-
-            header {
-                border-bottom: 1px solid black;
-                width: 100%;
-            }
-
-            #headDiv {
-                display: flex;
-            }
-
-            img {
-                width: 100px;
-                height: 100px;
-            }
-
-            nav {
-                text-align: right;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-
-            nav span {
-                font-size: 1.2em;
-                margin: auto;
-                width: 100px;
-                border: 1px solid #195e27;
-                text-align: center;
-            }
-
-            nav span:first-child {
-                border-radius: 10px 1px;
-                background-color: #9ec1a6;
-            }
-
-            nav span:hover {
-                box-shadow: 5px 5px 30px 2px #848181;
-            }
-
-            main {
-                min-height: 400px;
-            }
-
-            section {
-                display: none;
-                font-family: 'Questrial';
-                font-size: 17px;
-            }
-
-            section:first-child {
-                display: inline-block;
-            }
-
-            #ligne {
-                height: 50px;
-                background-image: url('IMG/capture.png');
-                opacity: 0.75;
-            }
-
-            footer {
-                height: 50px;
-                display: flex;
-                justify-content: space-around;
-            }
-
-            a {
-                color: black;
-                text-decoration: none;
-                border: 1px solid #f4f4f4;
-                width: 150px;
-                text-align: center;
-            }
-
-            a:hover {
-                opacity: 0.75;
-                color: #195e27;
-            }
-
-            @media screen and (max-width: 825px) {
-                nav {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                footer {
-                    flex-wrap: wrap;
-                }
-            }
-        </style>
+        <link href='CSS/index.css' rel='stylesheet'>
+        <link href='CSS/responsive.css' rel='stylesheet'>
     </head>
+
     <body>
 
         <header>
@@ -129,6 +24,7 @@
                 <span id="about">A propos</span>
             </nav>
         </header>
+
         <main>
             <section id="sctAccueil">
                 Eodem tempore etiam Hymetii praeclarae indolis viri negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum provenisset segetum copia, integre sine ulla restituit mora.
@@ -186,39 +82,19 @@
             </section>
 
         </main>
+
         <div id="ligne"></div>
+
         <footer>
-            <a href="#">Intégration</a>
             <a href="#">Qui sommes nous?</a>
             <a href="#">Nous contacter</a>
+            <a href="#">Plan du site</a>
             <a href="#">Copyright @blabla</a>
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script> -->
-        <script>
-            $(function() {
-                
-            	var selectedSct;
-                $('nav span').click(function() {
-                    $('nav span').css('border-radius', '0px').css('background-color', '#f4f4f4');
-                    $(this).css('border-radius', '10px 1px').css('background-color', '#9ec1a6');
-
-                    var up = capitalize($(this).attr('id'));
-                    var id = 'sct' + String(up);
-                    if(id != selectedSct) {
-                    	selectedSct = id;
-                    	$('section').slideUp('fast').delay(500);
-						$('#' + id).slideDown('fast');
-                    }
-                    
-                    
-                });
-
-                function capitalize(x) {
-                    return x.charAt(0).toUpperCase() + x.slice(1);
-                }
-            })
-        </script>
+        <script src="JS/fonctions.js"></script>
+        <script src="JS/index.js"></script>
+    
     </body>
 </html>

@@ -1,0 +1,98 @@
+/* feuille de style principale */
+
+* {
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: auto;
+    width: 70%;
+    min-width: 310px;
+    font-family: 'Questrial';
+    font-size: 15px;
+    height: 800px;
+}
+
+header {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#headDiv {
+    display: flex;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav span {
+    font-size: 1.2em;
+    margin: auto;
+    width: 100px;
+    border: 1px solid #195e27;
+    text-align: center;
+}
+
+nav span:first-child {
+    border-radius: 10px 1px;
+    background-color: #9ec1a6;
+}
+
+nav span:hover {
+    box-shadow: 5px 5px 30px 2px #848181;
+}
+
+main {
+    min-height: 400px;
+}
+
+section {
+    display: none;
+    font-size: 17px;
+}
+
+section:first-child {
+    display: inline-block;
+}
+
+#ligne {
+    height: 50px;
+    background-image: url('../IMG/capture.png');
+    opacity: 0.75;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #f4f4f4;
+    width: 150px;
+    text-align: center;
+}
+
+a:hover {
+    opacity: 0.75;
+    color: #195e27;
+}
