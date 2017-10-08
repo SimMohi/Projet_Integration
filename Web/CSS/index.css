@@ -23,12 +23,12 @@ header {
     background-color: #bafd9a;
 }
 
-img {
+#logo {
     width: 75px;
     height: 75px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
 }
 
 #title {
@@ -51,9 +51,17 @@ nav {
     text-align: center;
 }
 
+#menu {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
 nav span {
     width: 100px;
-    min-width: 75px;
+    min-width: 80px;
     height: 30px;
     border: 1px solid black;
     border-bottom: none;
@@ -79,33 +87,30 @@ nav span:hover {
 }
 
 main {
-    display: flex;
-    justify-content: center;
     padding: 3%;
-    max-height: 550px;
-    min-height: 500px;
+    min-height: 700px;
     overflow: auto;
 }
 
 section {
     display: none;
     width: 90%;
+    margin: auto;
     font-size: 1.15em;
 }
 
 section:first-child {
-    display: inline-block;
+    display: block;
 }
 
 footer {
-    height: 100px;
+    height: 133px;
     width: 100%;
     border-top: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    background-color: #bafd9a;
 }
 
 a {

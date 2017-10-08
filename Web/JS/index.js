@@ -2,8 +2,8 @@
 
 $(function() {
                 
-	var selectedSct = 'sctAccueil';
-
+    var selectedSct = 'sctAccueil';
+    
 	// quand on clique sur les boutons du menu de navigation
     $('nav span').click(function() {
         // modifie les bordures du menu
@@ -18,8 +18,19 @@ $(function() {
         if(id != selectedSct) {
         	$('#' + selectedSct).fadeOut('fast');
         	selectedSct = id;
-			$('#' + id).delay(300).fadeIn('slow');
+			$('#' + id).delay(300).fadeIn(500);
         }
     });
+
+    $('#menu').click(function() {
+        
+        var isMenuOn = $('nav span').css('display');
+        if(isMenuOn == 'none') {
+            $('nav span').slideDown('fast');
+        } else {
+            $('nav span').slideUp('fast');
+        }
+        
+    })
 
 })
