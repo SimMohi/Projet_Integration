@@ -13,5 +13,5 @@ $ORIGIN greenup.ephec-ti.be.
 
 @           IN    NS    ns
 
-ns          IN     A    54.39.190.72
-www         IN     A    54.39.190.72
+ns          IN     A    54.36.190.72
+www         IN     A    54.36.190.72
