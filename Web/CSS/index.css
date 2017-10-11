@@ -103,6 +103,21 @@ section:first-child {
     display: block;
 }
 
+#btnQuizz {
+    width: 250px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(115, 233, 242);
+    border-radius: 5px;
+}
+
+#btnQuizz:hover {
+    font-size: 1.1em;
+}
+
 footer {
     height: 133px;
     width: 100%;
