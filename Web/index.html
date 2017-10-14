@@ -15,13 +15,13 @@
             <div id="title">
                 <h1>GREEN UP !</h1>
             </div>
-            <nav>
-                <span id="accueil">Accueil</span>
-                <span id="jeux">Jeux</span>
-                <span id="local">Local</span>
-                <span id="donation">Donation</span>
-                <span id="quizz">Quizz</span>
-                <span id="about">A propos</span>
+            <nav id="navHead">
+                <span id="accueil" class="navSpanHead">Accueil</span>
+                <span id="jeux" class="navSpanHead">Jeux</span>
+                <span id="local" class="navSpanHead">Local</span>
+                <span id="donation" class="navSpanHead">Donation</span>
+                <span id="quizz" class="navSpanHead">Quizz</span>
+                <span id="about" class="navSpanHead">A propos</span>
             </nav>
         </header>
 
@@ -36,13 +36,31 @@
                 Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia porrigitur Nili, laeva Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam plagam Nicator Seleucus occupatam auxit magnum in modum, cum post Alexandri Macedonis obitum successorio iure teneret regna Persidis, efficaciae inpetrabilis rex, ut indicat cognomentum.
             </section>
             <section id="sctJeux">
-                Eodem tempore etiam Hymetii praeclarae indolis viri negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum provenisset segetum copia, integre sine ulla restituit mora.
-
-                Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.
-
-                Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio destitutus sine ullo interiret obstaculo.
-
-                Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia porrigitur Nili, laeva Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam plagam Nicator Seleucus occupatam auxit magnum in modum, cum post Alexandri Macedonis obitum successorio iure teneret regna Persidis, efficaciae inpetrabilis rex, ut indicat cognomentum.
+                <div id="sctJeuxFull">
+                    <div id="gameLeftSide">
+                        <nav id="navGame">
+                            <span id="tetris" class="navSpanGame">Trash Tetris</span>
+                            <span id="error" class="navSpanGame">Jeu de l'erreur</span>
+                            <span id="pacman" class="navSpanGame">PacMan</span>
+                            <span id="gameQuizz" class="navSpanGame">Quizz</span>                        
+                        </nav>
+                    </div>
+                    <aside id="gameRightSide">
+                        <article id="artTetris" class="artGame">
+                            <p>Eodem tempore etiam Hymetii praeclarae indolis viri negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum provenisset segetum copia, integre sine ulla restituit mora.</p>
+                        </article>
+                        <article id="artError" class="artGame">
+                            <p>Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.</p>
+                        </article>
+                        <article id="artPacman" class="artGame">
+                            <p>Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio destitutus sine ullo interiret obstaculo.</p>
+                        </article>
+                        <article id="artGameQuizz" class="artGame">
+                            <p>Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia porrigitur Nili, laeva Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam plagam Nicator Seleucus occupatam auxit magnum in modum, cum post Alexandri Macedonis obitum successorio iure teneret regna Persidis, efficaciae inpetrabilis rex, ut indicat cognomentum.</p>
+                        </article>
+                    </aside>
+                </div>
+                
             </section>
             <section id="sctLocal">
                 Eodem tempore etiam Hymetii praeclarae indolis viri negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum provenisset segetum copia, integre sine ulla restituit mora.
@@ -63,9 +81,12 @@
                 Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia porrigitur Nili, laeva Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam plagam Nicator Seleucus occupatam auxit magnum in modum, cum post Alexandri Macedonis obitum successorio iure teneret regna Persidis, efficaciae inpetrabilis rex, ut indicat cognomentum.
             </section>
             <section id="sctQuizz">
-                <p>Nous vous proposons de jouer à un jeu : un Quizz !</p>
-                <p>Son objectif est de vous ouvrir les yeux sur l'aspect non-écologique de certaines choses du quotidient</p>
-                <div id="btnQuizz">Commencer le Quizz</div>
+                <div id="preQuizz">
+                    <p>Nous vous proposons de jouer à un jeu : un Quizz !</p>
+                    <p>Son objectif est de vous ouvrir les yeux sur l'aspect non-écologique de certaines choses du quotidient</p>
+                    <div id="btnQuizz">Commencer le Quizz</div>
+                </div>
+                
             </section>
             <section id="sctAbout">
                 Eodem tempore etiam Hymetii praeclarae indolis viri negotium est actitatum, cuius hunc novimus esse textum. cum Africam pro consule regeret Carthaginiensibus victus inopia iam lassatis, ex horreis Romano populo destinatis frumentum dedit, pauloque postea cum provenisset segetum copia, integre sine ulla restituit mora.
