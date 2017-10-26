@@ -8,7 +8,7 @@ $(function() {
 	// quand on clique sur les boutons du menu de navigation
     $('.navSpanHead').click(function() {
         // modifie les bordures du menu
-        $('.navSpanHead').css('background-color', '#f4f4f4');
+        $('.navSpanHead').css('background-color', '#ffffff');
         $(this).css('background-color', '#9ec1a6');
 
         // assigne une valeur qui servira d'identifiant
@@ -28,22 +28,24 @@ $(function() {
         var isMenuOn = $('nav span').css('display');
         if(isMenuOn == 'none') {
             $('.navSpanHead').slideDown('fast');
+            $('#menu').css('animation', 'rotate 0.4s').css('animation-fill-mode', 'forwards');          
         } else {
             $('.navSpanHead').slideUp('fast');
+            $('#menu').css('animation', 'rotateBack 0.4s').css('animation-fill-mode', 'forwards');
         }
     })
 
     $('.navSpanGame').click(function() {
-        $('.navSpanGame').css('color', 'lightGrey');
-        $(this).css('color', 'yellow');
+        $('.navSpanGame').css('color', 'black');
+        $(this).css('color', 'red');
         
         var up = capitalize($(this).attr('id'));
         var id = 'art' + String(up);
 
         if(id != selectedArt) {
-            $('#' + selectedArt).fadeOut('fast', function() {
+            $('#' + selectedArt).slideUp(function() {
                 selectedArt = id;
-                $('#' + id).fadeIn('fast');
+                $('#' + id).slideDown();
             });
         } 
     })
@@ -76,13 +78,12 @@ $(function() {
                         $('#preQuizz').append('<p>Félicitation</p>');
                         $('#preQuizz').append('<p>Effectivement, c\'est la que ça se jette!</p>');
                     } else {
-                        $('#preQuizz').append('<p>Nope</p>');
+                        $('#preQuizz').append('<p>Dommage</p>');
                         $('#preQuizz').append('<p>Les emballages de Pringles contiennent du carton, du plastique mais aussi du métal, ce qui lui interdit d\'aller dans une autre poubelle que la normale!</p>');                        
                     }
                     $('#preQuizz').append('<br />' + nextQuestion + '<br /><div id="cptQuizz">'  + cpt + '/10</div><br />');
                     $('#cptQuizz').css('text-align', 'right');                               
                 }
-                
             })
         });
 
